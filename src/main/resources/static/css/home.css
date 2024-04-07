@@ -1,19 +1,27 @@
-p {
-    color: white;
-    font-family: Arial, serif;
-    font-size: 2vw;
-    text-align: center;
+
+.image-container{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 5%;
+    min-height: 100vh;
 }
 
 .album{
-    position: relative;
     width: 10%;
-    float: left;
-    margin: 30% 0 0 3.5%;
+    min-width: 10%;
+    min-height: 10%;
     background: #7eedd3;
-    border-radius: 5px;
-    padding: 0.5%;
+    margin: 1%;
+    padding: 0.1%;
 }
-.album:first-child{
-    margin-left: 0;
+
+.caption{
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 1vw;
+    color: white;
+    text-decoration: none;
 }
