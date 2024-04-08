@@ -1,3 +1,13 @@
+body{
+    cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1156.ani),
+    url(https://ani.cursors-4u.net/cursors/cur-13/cur1156.png), auto !important;
+}
+
+.main-caption{
+    font-size: 60px;
+    text-align: center;
+    color: white;
+}
 
 .image-container{
     display: inline-flex;
@@ -9,13 +19,49 @@
     min-height: 100vh;
 }
 
+.album-box{
+    height: 250px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
 .album{
-    width: 10%;
-    min-width: 10%;
-    min-height: 10%;
-    background: #7eedd3;
-    margin: 1%;
-    padding: 0.1%;
+    background: darkslateblue;
+    width: 204px;
+    padding: 4px 2px 2px;
+    justify-content: center;
+    justify-items: center;
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=11736), pointer;
+}
+
+.first-item{
+    padding-left: 2px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+
+.album:hover{
+    background: blueviolet;
+}
+
+.album-box p{
+    vertical-align: bottom;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    text-underline: none;
+    text-size: 20px;
+}
+
+.album img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 0 auto;
+    align-self: center;
 }
 
 .caption{
