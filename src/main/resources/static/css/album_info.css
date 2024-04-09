@@ -1,0 +1,27 @@
+body{
+    background-color: #454545;
+}
+
+.album-title{
+    display: block;
+    font-family: "Times New Roman", sans-serif;
+    color: white;
+    font-weight: 900;
+}
+
+.text{
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 1vw;
+    color: white;
+    text-decoration: none;
+}
+
+.album-box{
+    margin-left: 100px;
+}
+
+.album{
+    background: blueviolet;
+    padding: 4px 4px 4px;
+}

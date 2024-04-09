@@ -1,6 +1,5 @@
 body{
-    cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1156.ani),
-    url(https://ani.cursors-4u.net/cursors/cur-13/cur1156.png), auto !important;
+    background-color: #1d1d1d;
 }
 
 .main-caption{
@@ -38,16 +37,15 @@ body{
 }
 
 .first-item{
-    padding-left: 2px;
-    padding-bottom: 3px;
-    padding-top: 3px;
+    padding: 3px 2px 2px;
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=11736), pointer;
 }
 
 .album:hover{
     background: blueviolet;
 }
 
-.album-box p{
+.album-box a{
     vertical-align: bottom;
     text-decoration: none;
     text-align: center;
@@ -55,6 +53,13 @@ body{
     text-underline: none;
     text-size: 20px;
 }
+
+.caption:hover{
+    color:mediumspringgreen;
+    cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1056.ani), url(https://cur.cursors-4u.net/cursors/cur-11/cur1056.png), pointer;
+
+}
+
 
 .album img {
     width: 200px;

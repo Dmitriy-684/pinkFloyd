@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${albumName}"></title>
+    <link rel="icon" href="../icons/website.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/album_info.css">
+</head>
+<body>
+    <h1 class="album-title" th:text="${albumName}"></h1>
+    <div class="album-box">
+        <img class="album" th:src="${albumCover}" th:alt="${albumName}">
+    </div>
+    <p class="text" th:text="${albumInfo}"></p>
+</body>
+</html>
