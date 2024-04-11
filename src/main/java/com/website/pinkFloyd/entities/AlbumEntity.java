@@ -30,6 +30,9 @@ public class AlbumEntity {
 
     public String getInfo(){ return info; }
 
+    public String[] getPrettyInfo(){
+        return info.split("\\(абзац\\)");
+    }
     public void setInfo(String info) { this.info = info; }
 
     public String getName() { return name; }

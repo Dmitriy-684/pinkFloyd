@@ -1,5 +1,5 @@
 body{
-    background-color: #1d1d1d;
+    background: url("../images/backgrounds/home_background.gif") repeat;
 }
 
 .main-caption{
@@ -56,7 +56,8 @@ body{
 
 .caption:hover{
     color:mediumspringgreen;
-    cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1056.ani), url(https://cur.cursors-4u.net/cursors/cur-11/cur1056.png), pointer;
+    cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1056.ani),
+            url(https://cur.cursors-4u.net/cursors/cur-11/cur1056.png), pointer;
 
 }
 
