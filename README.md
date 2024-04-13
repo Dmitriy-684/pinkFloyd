@@ -1,2 +1,3 @@
 # pinkFloyd
-My Pink Floyd website
+![website](./home.png)
+![website](./album_info.png)
