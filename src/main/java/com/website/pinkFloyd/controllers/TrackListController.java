@@ -13,6 +13,7 @@ public class TrackListController {
 
     @GetMapping("the-endless-river")
     public String endlessRiver(Model model){
-        return "./track_lists/endless_river_tracks";
+        model.addAttribute("title", "The Endless River tracks");
+        return "./track_list/endless_river_tracks";
     }
 }

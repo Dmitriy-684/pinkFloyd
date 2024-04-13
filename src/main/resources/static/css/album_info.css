@@ -23,10 +23,13 @@ body{
 }
 .track-list{
     text-decoration: none;
-    font-family: Arial, sans-serif;
-    font-size: 1.6vw;
+    font-family: "Times New Roman", sans-serif;
+    font-size: 2vw;
     color: white;
     font-weight: 700;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
 }
 
 .album-box{

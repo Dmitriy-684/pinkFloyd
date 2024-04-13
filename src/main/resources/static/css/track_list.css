@@ -1,3 +1,30 @@
 body{
-    background: url("../images/backgrounds/info_background.gif") repeat;
+    background: url("../images/backgrounds/track_background.gif") repeat;
+}
+
+.tracks-box{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 5%;
+    min-height: 100vh;
+}
+
+.track-box{
+
+}
+
+audio {
+    filter: sepia(20%) saturate(70%) grayscale(100%) contrast(99%) invert(12%);
+}
+
+.track-name{
+    vertical-align: bottom;
+    text-decoration: none;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 1.5vw;
+    color: #c139f7;
 }

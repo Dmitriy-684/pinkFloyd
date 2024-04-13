@@ -43,9 +43,10 @@ body{
 
 .album:hover{
     background: blueviolet;
+
 }
 
-.album-box a{
+.album-box p{
     vertical-align: bottom;
     text-decoration: none;
     text-align: center;
@@ -54,11 +55,8 @@ body{
     text-size: 20px;
 }
 
-.caption:hover{
+.album:hover ~ .caption{
     color:mediumspringgreen;
-    cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1056.ani),
-            url(https://cur.cursors-4u.net/cursors/cur-11/cur1056.png), pointer;
-
 }
 
 
