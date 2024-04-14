@@ -31,8 +31,14 @@ public class AlbumInfoController {
 
     @GetMapping("/the-division-bell")
     public String divisionBell(Model model){
-        model.addAttribute("albumName", "The Division Bell");
+        AlbumEntity albumEntity = albumService.getByName("The Division Bell");
+        String[] paragraphs = albumEntity.getPrettyInfo();
+        model.addAttribute("albumName", albumEntity.getName());
         model.addAttribute("albumCover", "../images/covers/the_division_bell.jpg");
+        model.addAttribute("infoParagraph1", paragraphs[0]);
+        model.addAttribute("infoParagraph2", paragraphs[1]);
+        model.addAttribute("infoParagraph3", paragraphs[2]);
+        model.addAttribute("trackRef", "http://localhost:8080/track-list/the-division-bell");
         return "album_info";
     }
 

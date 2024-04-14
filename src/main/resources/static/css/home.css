@@ -16,6 +16,7 @@ body{
     align-content: center;
     gap: 5%;
     min-height: 100vh;
+    min-width: 100vh;
 }
 
 .album-box{
@@ -71,7 +72,7 @@ body{
 .caption{
     display: block;
     font-family: Arial, sans-serif;
-    font-size: 1vw;
+    font-size: 14px;
     color: white;
     text-decoration: none;
 }

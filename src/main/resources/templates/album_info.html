@@ -12,10 +12,14 @@
     <div class="album-box">
         <img class="album" th:src="${albumCover}" th:alt="${albumName}">
     </div>
-    <h2 class="album-title">Немного об альбоме:</h2>
-    <p class="text" th:text="${infoParagraph1}"></p>
-    <p class="text" th:text="${infoParagraph2}"></p>
-    <p class="text" th:text="${infoParagraph3}"></p>
-    <a class="track-list" th:href="${trackRef}">Слушать композиции альбома</a>
+    <div class="info-box">
+        <h2 class="album-title">Немного об альбоме:</h2>
+        <p class="text" th:text="${infoParagraph1}"></p>
+        <p class="text" th:text="${infoParagraph2}"></p>
+        <p class="text" th:text="${infoParagraph3}"></p>
+    </div>
+    <div class="track-list-link">
+        <a class="link" th:href="${trackRef}">Слушать композиции альбома</a>
+    </div>
 </body>
 </html>

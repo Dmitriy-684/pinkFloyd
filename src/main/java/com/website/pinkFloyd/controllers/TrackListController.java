@@ -16,4 +16,10 @@ public class TrackListController {
         model.addAttribute("title", "The Endless River tracks");
         return "./track_list/endless_river_tracks";
     }
+
+    @GetMapping("the-division-bell")
+    public String divisionBell(Model model){
+        model.addAttribute("title", "The Division Bell tracks");
+        return "./track_list/division_bell_tracks";
+    }
 }

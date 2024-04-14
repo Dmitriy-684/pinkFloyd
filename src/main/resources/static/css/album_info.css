@@ -12,21 +12,25 @@ body{
 .text{
     display: block;
     font-family: Arial, sans-serif;
-    font-size: 1.5vw;
+    font-size: 20px;
     color: #eddcf7;
     text-decoration: none;
 }
 
-.track-list:hover{
+.link:hover{
     color:mediumspringgreen;
     cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym57.cur), pointer
 }
-.track-list{
+
+.link{
     text-decoration: none;
     font-family: "Times New Roman", sans-serif;
-    font-size: 2vw;
-    color: white;
+    font-size: 30px;
     font-weight: 700;
+    color: white;
+}
+
+.track-list-link{
     display: flex;
     justify-content: center;
     justify-items: center;
