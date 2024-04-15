@@ -45,3 +45,22 @@ body{
     padding: 4px 4px 4px;
     width: 300px;
 }
+
+button:hover{
+    color: blueviolet;
+}
+
+button {
+    padding: 20px 50px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    background-color: black;
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=11736), pointer;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 2px;
+    box-shadow: 0 5px 10px black;
+
+}

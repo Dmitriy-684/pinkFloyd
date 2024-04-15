@@ -44,82 +44,148 @@ public class AlbumInfoController {
 
     @GetMapping("/a-momentary-lapse-of-reason")
     public String lapse(Model model){
-        model.addAttribute("albumName", "A Momentary Lapse Of Reason");
+        AlbumEntity albumEntity = albumService.getByName("A Momentary Lapse Of Reason");
+        String[] paragraphs = albumEntity.getPrettyInfo();
+        model.addAttribute("albumName", albumEntity.getName());
         model.addAttribute("albumCover", "../images/covers/a_momentary_lapse_of_reason.jpg");
+//        model.addAttribute("infoParagraph1", paragraphs[0]);
+//        model.addAttribute("infoParagraph2", paragraphs[1]);
+//        model.addAttribute("infoParagraph3", paragraphs[2]);
+        model.addAttribute("trackRef", "http://localhost:8080/track-list/a-momentary-lapse-of-reason");
         return "album_info";
     }
 
     @GetMapping("/the-final-cut")
     public String finalCut(Model model){
-        model.addAttribute("albumName", "The Final Cut");
+        AlbumEntity albumEntity = albumService.getByName("The Final Cut");
+        String[] paragraphs = albumEntity.getPrettyInfo();
+        model.addAttribute("albumName", albumEntity.getName());
         model.addAttribute("albumCover", "../images/covers/the_final_cut.jpg");
+//        model.addAttribute("infoParagraph1", paragraphs[0]);
+//        model.addAttribute("infoParagraph2", paragraphs[1]);
+//        model.addAttribute("infoParagraph3", paragraphs[2]);
+        model.addAttribute("trackRef", "http://localhost:8080/track-list/the-final-cut");
         return "album_info";
     }
 
     @GetMapping("/the-wall")
     public String wall(Model model)
     {
-        model.addAttribute("albumName", "The Wall");
+        AlbumEntity albumEntity = albumService.getByName("The Wall");
+        String[] paragraphs = albumEntity.getPrettyInfo();
+        model.addAttribute("albumName", albumEntity.getName());
         model.addAttribute("albumCover", "../images/covers/the_wall.jpg");
+//        model.addAttribute("infoParagraph1", paragraphs[0]);
+//        model.addAttribute("infoParagraph2", paragraphs[1]);
+//        model.addAttribute("infoParagraph3", paragraphs[2]);
+        model.addAttribute("trackRef", "http://localhost:8080/track-list/the-wall");
         return "album_info";
     }
 
     @GetMapping("/animals")
     public String animals(Model model){
-        model.addAttribute("albumName", "Animals");
+        AlbumEntity albumEntity = albumService.getByName("Animals");
+        String[] paragraphs = albumEntity.getPrettyInfo();
+        model.addAttribute("albumName", albumEntity.getName());
         model.addAttribute("albumCover", "../images/covers/animals.jpg");
+//        model.addAttribute("infoParagraph1", paragraphs[0]);
+//        model.addAttribute("infoParagraph2", paragraphs[1]);
+//        model.addAttribute("infoParagraph3", paragraphs[2]);
+        model.addAttribute("trackRef", "http://localhost:8080/track-list/animals");
         return "album_info";
     }
 
     @GetMapping("/wish-you-were-here")
     public String wereHere(Model model){
-        model.addAttribute("albumName", "Wish You Were Here");
+        AlbumEntity albumEntity = albumService.getByName("Wish You Were Here");
+        String[] paragraphs = albumEntity.getPrettyInfo();
+        model.addAttribute("albumName", albumEntity.getName());
         model.addAttribute("albumCover", "../images/covers/wish_you_were_here.jpg");
+//        model.addAttribute("infoParagraph1", paragraphs[0]);
+//        model.addAttribute("infoParagraph2", paragraphs[1]);
+//        model.addAttribute("infoParagraph3", paragraphs[2]);
+        model.addAttribute("trackRef", "http://localhost:8080/track-list/wish-you-were-here");
         return "album_info";
 
     }
 
     @GetMapping("/the-dark-side-of-the-moon")
     public String darkSide(Model model){
-        model.addAttribute("albumName", "The Dark Side Of The Moon");
+        AlbumEntity albumEntity = albumService.getByName("The Dark Side Of The Moon");
+        String[] paragraphs = albumEntity.getPrettyInfo();
+        model.addAttribute("albumName", albumEntity.getName());
         model.addAttribute("albumCover", "../images/covers/the_dark_side_of_the_moon.jpg");
+//        model.addAttribute("infoParagraph1", paragraphs[0]);
+//        model.addAttribute("infoParagraph2", paragraphs[1]);
+//        model.addAttribute("infoParagraph3", paragraphs[2]);
+        model.addAttribute("trackRef", "http://localhost:8080/track-list/the-dark-side-of-the-moon");
         return "album_info";
 
     }
 
     @GetMapping("/meddle")
     public String meddle(Model model){
-        model.addAttribute("albumName", "Meddle");
+        AlbumEntity albumEntity = albumService.getByName("Meddle");
+        String[] paragraphs = albumEntity.getPrettyInfo();
+        model.addAttribute("albumName", albumEntity.getName());
         model.addAttribute("albumCover", "../images/covers/meddle.jpg");
+//        model.addAttribute("infoParagraph1", paragraphs[0]);
+//        model.addAttribute("infoParagraph2", paragraphs[1]);
+//        model.addAttribute("infoParagraph3", paragraphs[2]);
+        model.addAttribute("trackRef", "http://localhost:8080/track-list/meddle");
         return "album_info";
     }
 
     @GetMapping("/atom-heart-mother")
     public String atomHeart(Model model)
     {
-        model.addAttribute("albumName", "Atom Heart Mother");
+        AlbumEntity albumEntity = albumService.getByName("Atom Heart Mother");
+        String[] paragraphs = albumEntity.getPrettyInfo();
+        model.addAttribute("albumName", albumEntity.getName());
         model.addAttribute("albumCover", "../images/covers/atom_heart_mother.jpg");
+//        model.addAttribute("infoParagraph1", paragraphs[0]);
+//        model.addAttribute("infoParagraph2", paragraphs[1]);
+//        model.addAttribute("infoParagraph3", paragraphs[2]);
+        model.addAttribute("trackRef", "http://localhost:8080/track-list/atom-heart-mother");
         return "album_info";
     }
 
     @GetMapping("/ummagumma")
     public String ummagumma(Model model){
-        model.addAttribute("albumName", "Ummagumma");
+        AlbumEntity albumEntity = albumService.getByName("Ummagumma");
+        String[] paragraphs = albumEntity.getPrettyInfo();
+        model.addAttribute("albumName", albumEntity.getName());
         model.addAttribute("albumCover", "../images/covers/ummagumma.jpg");
+//        model.addAttribute("infoParagraph1", paragraphs[0]);
+//        model.addAttribute("infoParagraph2", paragraphs[1]);
+//        model.addAttribute("infoParagraph3", paragraphs[2]);
+        model.addAttribute("trackRef", "http://localhost:8080/track-list/ummagumma");
         return "album_info";
     }
 
     @GetMapping("/a-saucerful-of-secrets")
     public String secrets(Model model){
-        model.addAttribute("albumName", "A Saucerful Of Secrets");
+        AlbumEntity albumEntity = albumService.getByName("A Saucerful Of Secrets");
+        String[] paragraphs = albumEntity.getPrettyInfo();
+        model.addAttribute("albumName", albumEntity.getName());
         model.addAttribute("albumCover", "../images/covers/a_saucerful_of_secrets.jpg");
+//        model.addAttribute("infoParagraph1", paragraphs[0]);
+//        model.addAttribute("infoParagraph2", paragraphs[1]);
+//        model.addAttribute("infoParagraph3", paragraphs[2]);
+        model.addAttribute("trackRef", "http://localhost:8080/track-list/a-saucerful-of-secrets");
         return "album_info";
     }
 
     @GetMapping("/the-piper-at-the-gates-of-dawn")
     public String piper(Model model){
-        model.addAttribute("albumName", "The Piper At The Gates Of Dawn");
+        AlbumEntity albumEntity = albumService.getByName("The Piper At The Gates Of Dawn");
+        String[] paragraphs = albumEntity.getPrettyInfo();
+        model.addAttribute("albumName", albumEntity.getName());
         model.addAttribute("albumCover", "../images/covers/the_piper_at_the_gates_of_dawn.jpg");
+//        model.addAttribute("infoParagraph1", paragraphs[0]);
+//        model.addAttribute("infoParagraph2", paragraphs[1]);
+//        model.addAttribute("infoParagraph3", paragraphs[2]);
+        model.addAttribute("trackRef", "http://localhost:8080/track-list/the-piper-at-the-gates-of-dawn");
         return "album_info";
     }
 }

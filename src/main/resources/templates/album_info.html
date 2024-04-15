@@ -19,7 +19,9 @@
         <p class="text" th:text="${infoParagraph3}"></p>
     </div>
     <div class="track-list-link">
-        <a class="link" th:href="${trackRef}">Слушать композиции альбома</a>
+        <<a th:href="${trackRef}">
+            <button type="button">Слушать композиции</button>
+        </a>
     </div>
 </body>
 </html>
