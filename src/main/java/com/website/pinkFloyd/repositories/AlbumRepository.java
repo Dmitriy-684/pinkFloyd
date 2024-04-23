@@ -7,5 +7,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface AlbumRepository extends CrudRepository<AlbumEntity, Integer>{
-
+    AlbumEntity getAlbumEntityByName(String name);
 }
