@@ -2,8 +2,11 @@ package com.website.pinkFloyd.entities;
 
 import jakarta.persistence.*;
 
+import java.util.LinkedHashSet;
+import java.util.Set;
+
 @Entity
-@Table(name = "albums")
+@Table(name = "albums", schema = "pink_floyd")
 public class AlbumEntity {
 
     @Id
@@ -17,11 +20,15 @@ public class AlbumEntity {
     @Column(name="info")
     private String info;
 
-    public AlbumEntity(){}
+    @OneToMany(mappedBy = "album")
+    private Set<TrackEntity> tracks = new LinkedHashSet<>();
 
-    public AlbumEntity(String name, String info) {
-        this.name = name;
-        this.info = info;
+    public Set<TrackEntity> getTracks() {
+        return tracks;
+    }
+
+    public void setTracks(Set<TrackEntity> tracks) {
+        this.tracks = tracks;
     }
 
     public int getId(){ return id; }
