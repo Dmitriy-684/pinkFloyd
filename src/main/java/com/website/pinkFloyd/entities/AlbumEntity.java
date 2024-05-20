@@ -38,7 +38,7 @@ public class AlbumEntity {
     public String getInfo(){ return info; }
 
     public String[] getPrettyInfo(){
-        return info.split("\\(абзац\\)");
+        return info.split("\n");
     }
     public void setInfo(String info) { this.info = info; }
 
