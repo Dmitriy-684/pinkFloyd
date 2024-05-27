@@ -9,7 +9,7 @@ body{
     flex-wrap: wrap;
     align-content: center;
     gap: 5%;
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 .track-box{
@@ -29,3 +29,29 @@ audio {
     color: #c139f7;
 }
 
+
+button {
+    padding: 20px 50px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    background-color: #00a2ff;
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=11736), pointer;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 2px;
+    box-shadow: 0 5px 10px black;
+
+}
+
+button:hover{
+    color: aqua;
+}
+
+.track-list-link{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+
+}

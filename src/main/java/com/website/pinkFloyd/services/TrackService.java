@@ -14,6 +14,7 @@ public class TrackService {
 
     public String getTrackPage(Model model, String albumName){
         model.addAttribute("title", albumName + "tracks");
+        model.addAttribute("albumRef", "http://localhost:8080/album-info/" + albumName);
         return "./track_list/" + albumName.replace("-", "_") + "_tracks";
     }
 }

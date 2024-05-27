@@ -27,5 +27,6 @@ public class AlbumService {
         model.addAttribute("infoParagraph2", paragraphs[1]);
         model.addAttribute("infoParagraph3", paragraphs[2]);
         model.addAttribute("trackRef", "http://localhost:8080/track-list/" + albumName);
+        model.addAttribute("homeRef", "http://localhost:8080/");
     }
 }
